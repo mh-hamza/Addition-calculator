@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ADD TWO NUMBERS</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <div class="center">
+    <div class="main">
+      <h1 class="title">Add Two Numbers</h1>
+      <div class="upper">
+      <h1>First value:</h1>
+      <input type="number" id="text1">
+      </div>
+      <div class="lower">
+      <h1>Second value:</h1>
+      <input type="number" id="text2">
+      </div>
+      <button onclick="addNumber()">Add</button><br>
+      <h1 id="result"></h1>
+    </div>
+    
+  </div>
+  <script type="text/javascript">
+   function addNumber(){
+ var a = parseInt( document.getElementById("text1").value);
+ var b = parseInt( document.getElementById("text2").value);
+ var sum = a+b;
+   
+document.getElementById("result").innerHTML= "The value is "+sum;
+
+   }
+  </script>
+</body>
+
+</html>
